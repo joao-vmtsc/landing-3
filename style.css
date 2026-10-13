@@ -17,9 +17,23 @@ body {
   background: white;
 }
 
-.marca { color: #c34c2c; font-size: 1.55rem; font-weight: 900; text-decoration: none; }
-nav { display: flex; gap: 24px; }
-nav a { text-decoration: none; color: #4b4b55; font-weight: 700; }
+.marca { 
+  color: #c34c2c; 
+  font-size: 1.55rem; 
+  font-weight: 900; 
+  text-decoration: none; 
+}
+
+nav { 
+  display: flex; 
+  gap: 24px; 
+}
+
+nav a { 
+  text-decoration: none; 
+  color: #4b4b55; 
+  font-weight: 700; 
+}
 
 .hero {
   display: grid;
@@ -29,8 +43,16 @@ nav a { text-decoration: none; color: #4b4b55; font-weight: 700; }
   padding: 66px 7%;
 }
 
-.hero-texto { max-width: 570px; }
-.tag { color: #c34c2c; font-size: .78rem; letter-spacing: 1.5px; font-weight: 900; }
+.hero-texto { 
+  max-width: 570px; 
+}
+
+.tag { 
+  color: #c34c2c; 
+  font-size: .78rem; 
+  letter-spacing: 1.5px; 
+  font-weight: 900; 
+}
 
 h1 {
   font-size: clamp(2.2rem, 4vw, 3.6rem);
@@ -38,10 +60,16 @@ h1 {
   margin: 16px 0 20px;
 }
 
-.resumo { text-align: right; color: #62616a; line-height: 1.75; font-size: 1.08rem; margin-bottom: 28px; }
+.resumo { 
+  text-align: left; 
+  color: #62616a; 
+  line-height: 1.75; 
+  font-size: 1.08rem; 
+  margin-bottom: 28px; 
+}
 
 .hero-foto img {
-  width: 125%;
+  width: 100%;
   height: 420px;
   object-fit: cover;
   border-radius: 24px;
@@ -59,15 +87,35 @@ h1 {
   white-space: nowrap;
 }
 
-.metodo { padding: 20px 7% 64px; }
-.metodo h2, .comece h2 { text-align: center; font-size: 2rem; }
+.metodo { 
+  padding: 20px 7% 64px; 
+}
 
-.etapas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.etapas article { padding: 24px; background: #ffffff; border: 1px solid #f0e2d9; border-radius: 15px; }
-.etapas p { color: #66636a; line-height: 1.6; }
+.metodo h2, .comece h2 { 
+  text-align: center; 
+  font-size: 2rem; 
+}
+
+.etapas { 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+}
+
+.etapas article { 
+  padding: 24px; 
+  background: #ffffff; 
+  border: 1px solid #f0e2d9; 
+  border-radius: 15px; 
+}
+
+.etapas p { 
+  color: #66636a; 
+  line-height: 1.6; 
+}
 
 .faixa {
-  color: #f4d7c9;
+  color: #342b2a;
   margin: 0 7% 48px;
   padding: 32px 36px;
   border-radius: 18px;
@@ -78,20 +126,56 @@ h1 {
   background: #f4d7c9;
 }
 
-.faixa h2 { margin-top: 0; }
-.faixa p { margin-bottom: 0; color: #65504a; }
-.botao-faixa { width: 90px; overflow: hidden; flex-shrink: 0; }
+.faixa h2 { 
+  margin-top: 0; 
+}
 
-.comece { padding: 8px 7% 48px; text-align: center; }
-.comece p { color: #62616a; }
+.faixa p { 
+  margin-bottom: 0; 
+  color: #65504a; 
+}
 
-footer { padding: 24px; text-align: center; color: white; background: #342b2a; }
+.botao-faixa { 
+  flex-shrink: 0; 
+}
+
+.comece { 
+  padding: 8px 7% 48px; 
+  text-align: center; 
+}
+
+.comece p { 
+  color: #62616a; 
+}
+
+footer { 
+  padding: 24px; 
+  text-align: center; 
+  color: white; 
+  background: #342b2a; 
+}
 
 @media (max-width: 760px) {
-  .topo { flex-direction: column; gap: 16px; }
-  nav { flex-wrap: wrap; justify-content: center; }
-  .hero { grid-template-columns: 1fr; padding-top: 36px; }
-  .hero-foto img { height: 280px; }
-  .etapas { grid-template-columns: 1fr; }
-  .faixa { flex-direction: column; align-items: flex-start; }
+  .topo { 
+    flex-direction: column; 
+    gap: 16px; 
+  }
+  nav { 
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
+  .hero { 
+    grid-template-columns: 1fr; 
+    padding-top: 36px; 
+  }
+  .hero-foto img { 
+    height: 280px; 
+  }
+  .etapas { 
+    grid-template-columns: 1fr; 
+  }
+  .faixa { 
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
 }
